@@ -3,7 +3,7 @@
 
 .pt-nav {
   @include base.flex-space-between;
-  height: 5rem;
+  height: base.$nav-height;
   width: 100%;
   padding: 5px 50px;
   font-size: 1.2rem;
