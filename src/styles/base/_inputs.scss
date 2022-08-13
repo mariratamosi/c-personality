@@ -1,0 +1,16 @@
+@use "mixins";
+
+.cp-btn {
+  padding: 0.5rem 1rem;
+  background: mixins.$primaryColor;
+  color: white;
+  border-radius: mixins.$border-radius;
+  text-decoration: none;
+  @include mixins.flex-space-between;
+}
+
+.cp-large-btn {
+  padding: 1rem 2rem;
+  border-radius: calc(mixins.$border-radius + mixins.$border-radius);
+  font-size: 1.3rem;
+}
