@@ -1,4 +1,5 @@
 import "../styles/components/home.scss"
+import { Link } from "react-router-dom"
 
 function Home() {
   return (
@@ -12,9 +13,9 @@ function Home() {
           </p>
         </div>
         <div className="hero-action">
-          <a href="/take-test" className="cp-btn cp-x-large-btn">
+          <Link to="/take-test" className="cp-btn cp-x-large-btn">
             Take the test
-          </a>
+          </Link>
           <div className="btn-sub-text">Only takes 10 minutes</div>
         </div>
       </div>

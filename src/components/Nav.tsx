@@ -1,22 +1,23 @@
 import "../styles/components/nav.scss"
 import logo from "../assets/logo.svg"
+import { Link } from "react-router-dom"
 
 function Nav() {
   return (
     <div className="pt-nav">
       <div>
-        <a href="/" className="pt-logo-text">
+        <Link to="/" className="pt-logo-text">
           <img src={logo} alt="pt logo" className="nav-logo" />
           <span className="nav-brand-name">
             <span>C-</span>
             <span>Personality</span>
           </span>
-        </a>
+        </Link>
       </div>
       <div>
-        <a href="/take-test" className="cp-btn cp-large-btn">
+        <Link to="/take-test" className="cp-btn cp-large-btn">
           Take the test
-        </a>
+        </Link>
       </div>
     </div>
   )
