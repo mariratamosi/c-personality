@@ -21,10 +21,10 @@
   span {
     font-family: monospace;
     &:first-child {
-      color: #00bcd4;
+      color: base.$secondaryCOlor;
     }
     &:last-child {
-      color: #2196f3;
+      color: base.$secondaryCOlor;
     }
   }
 }

@@ -6,11 +6,17 @@
   color: white;
   border-radius: mixins.$border-radius;
   text-decoration: none;
-  @include mixins.flex-space-between;
 }
 
 .cp-large-btn {
   padding: 1rem 2rem;
   border-radius: calc(mixins.$border-radius + mixins.$border-radius);
   font-size: 1.3rem;
+}
+
+.cp-x-large-btn {
+  padding: 2rem 3rem;
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  display: inline-block;
 }
