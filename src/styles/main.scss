@@ -1,10 +1,52 @@
 @use "./base";
 
+@font-face {
+  font-family: "pt-font";
+  font-weight: 100;
+  src: url("../assets/fonts/RobotoMono-Thin.ttf");
+}
+
+@font-face {
+  font-family: "pt-font";
+  font-weight: 200;
+  src: url("../assets/fonts/RobotoMono-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "pt-font";
+  font-weight: 300;
+  src: url("../assets/fonts/RobotoMono-Light.ttf");
+}
+
+@font-face {
+  font-family: "pt-font";
+  font-weight: 400;
+  src: url("../assets/fonts/RobotoMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "pt-font";
+  font-weight: 600;
+  src: url("../assets/fonts/RobotoMono-Medium.ttf");
+}
+
+@font-face {
+  font-family: "pt-font";
+  font-weight: 700;
+  src: url("../assets/fonts/RobotoMono-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "pt-font";
+  font-weight: 800;
+  src: url("../assets/fonts/RobotoMono-Bold.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace, Open Sans, Helvetica Neue, Arial, sans-serif;
+  font-family: pt-font, monospace, Open Sans, Helvetica Neue, Arial, sans-serif;
 }
 
 html,
