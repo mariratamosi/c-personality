@@ -1,6 +1,6 @@
 @use "./../base";
 
-$card-width: 290px;
+$card-width: 320px;
 $card-height: 230px;
 $header-height: 230px;
 
@@ -10,7 +10,7 @@ $header-height: 230px;
 
 .ex-groups-tween {
   width: 100%;
-  height: calc($header-height - 50px);
+  height: calc($header-height - 70px);
   background: #f0f0f0;
 }
 
@@ -32,7 +32,7 @@ $header-height: 230px;
     justify-content: center;
     position: absolute;
     width: 100%;
-    top: calc($header-height / 2);
+    top: calc($header-height - 100px);
 
     .ex-single {
       width: $card-width;
@@ -40,17 +40,26 @@ $header-height: 230px;
       background: hsl(0deg 0% 100% / 43%);
       border-radius: 1.25rem;
       padding: 1rem;
+      padding-top: 0;
       text-align: center;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
       margin: 15px;
       color: black;
 
+      .ex-single-icon {
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
       .ex-single-header {
         font-size: 1.3rem;
         margin-bottom: 10px;
+        white-space: nowrap;
       }
 
       .ex-single-icon img {
