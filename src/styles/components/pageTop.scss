@@ -1,0 +1,73 @@
+@use "./../base";
+
+$card-width: 320px;
+$card-height: 230px;
+$header-height: 230px;
+
+.ex-groups-tween {
+  width: 100%;
+  height: calc($header-height - 70px);
+  background: #f0f0f0;
+}
+
+.explanation {
+  position: relative;
+  background: base.$secondaryCOlor;
+  color: white;
+  position: relative;
+  height: 230px;
+
+  .ex-text {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 1.7rem;
+  }
+
+  .ex-sub-text {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+
+  .ex-groups {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: calc($header-height - 100px);
+
+    .ex-single {
+      width: $card-width;
+      height: $card-height;
+      background: hsl(0deg 0% 100% / 43%);
+      border-radius: 1.25rem;
+      padding: 1rem;
+      padding-top: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 15px;
+      color: black;
+
+      .ex-single-icon {
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .ex-single-header {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        white-space: nowrap;
+      }
+
+      .ex-single-icon img {
+        width: 50px;
+      }
+    }
+  }
+}

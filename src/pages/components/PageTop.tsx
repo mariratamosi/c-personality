@@ -1,18 +1,14 @@
-import { useEffect } from "react"
-import "../styles/components/testPage.scss"
-import logo from "../assets/logo.svg"
+import logo from "../../assets/logo.svg"
+import "../../styles/components/pageTop.scss"
 
-function TestPage() {
-  useEffect(() => {
-    /*
-    Query logic
-    */
-    console.log("i fire once")
-  }, [])
+function pageTop() {
   return (
-    <div className="test pt-page">
+    <>
       <div className="explanation">
         <div className="ex-text">Free Personality Test</div>
+        <div className="ex-sub-text">
+          Get closer to yourself by taking the test
+        </div>
         <div className="ex-groups">
           <div className="ex-single">
             <div className="ex-single-icon">
@@ -46,10 +42,8 @@ function TestPage() {
         </div>
       </div>
       <div className="ex-groups-tween"></div>
-
-      <div className="questionnaire">Questions</div>
-    </div>
+    </>
   )
 }
 
-export default TestPage
+export default pageTop
