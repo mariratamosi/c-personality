@@ -7,10 +7,12 @@ declare module "*.svg"
 type TypeQuestion = {
   id: string | number
   question: string
-  options: {
-    weight: number
-    answer: string
-  }[]
+  options: TypeOption[]
+}
+
+type TypeOption = {
+  weight: number
+  answer: string
 }
 type TypeQuestionList = TypeQuestion[]
 
