@@ -17,3 +17,7 @@ type TypeQuestionList = TypeQuestion[]
 type TypeQuestionListProps = {
   questionList: TypeQuestionList
 }
+
+type TypeQuestionProps = {
+  question: TypeQuestion
+}

@@ -1,11 +1,12 @@
 import type { ReactElement } from "react"
+import Question from "./Question"
 
 const QuestionList = ({ questionList }: TypeQuestionListProps): JSX.Element => {
   return (
     <div className="App">
       {questionList.map(
-        (que: TypeQuestion): ReactElement => {
-          return <div>{que.question}</div>
+        (question: TypeQuestion): ReactElement => {
+          return <Question question={question} />
         }
       )}
     </div>
