@@ -60,6 +60,8 @@ function TestPage() {
         ],
       },
     ]
+
+    setQuestionList(data)
   }, [])
   return (
     <div className="test pt-page">
