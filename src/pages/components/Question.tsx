@@ -1,4 +1,6 @@
 import { ReactElement } from "react"
+import "./../../styles/components/questions.scss"
+import RadioOption from "./Option"
 
 const Question = ({ question }: TypeQuestionProps): JSX.Element => {
   return (
@@ -8,22 +10,7 @@ const Question = ({ question }: TypeQuestionProps): JSX.Element => {
         <form id={`${question.id}_form`}>
           {question.options.map(
             (option: TypeOption, idx): ReactElement => {
-              return (
-                <div>
-                  <label
-                    htmlFor={`${question.id}_answer_${idx}`}
-                    className="input-label"
-                  >
-                    <input
-                      type="radio"
-                      value={option.weight}
-                      name={`${question.id}_answer_${idx}`}
-                      id={`${question.id}_answer_${idx}`}
-                    />
-                    <span> {option.answer}</span>
-                  </label>
-                </div>
-              )
+              return <RadioOption option={option} idx={idx} qid={question.id} />
             }
           )}
         </form>

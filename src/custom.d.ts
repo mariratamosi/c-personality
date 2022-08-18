@@ -23,3 +23,9 @@ type TypeQuestionListProps = {
 type TypeQuestionProps = {
   question: TypeQuestion
 }
+
+type TypeOptionProps = {
+  option: TypeOption
+  idx: number
+  qid: string | number
+}
