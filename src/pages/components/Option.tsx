@@ -8,7 +8,7 @@ const RadioOption = ({ option, idx, qid }: TypeOptionProps): JSX.Element => {
         id={`${qid}_answer_${idx}`}
       />
       <label htmlFor={`${qid}_answer_${idx}`} className="input-label">
-        {option.answer}
+        {idx + 1}) {option.answer}
       </label>
     </div>
   )
